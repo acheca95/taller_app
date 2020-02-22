@@ -39,7 +39,7 @@
         </record>
 
 		<menuitem id="master_root" name="Data Master"/>
-        <menuitem id="data_holder" name="Data Master" parent="master_root"/>
+        <menuitem id="data_holder" name="Taller" parent="master_root"/>
         <menuitem id="taller_menu" name="Data Taller" action="taller_action" parent="data_holder"/>
 
 	</data>
