@@ -1,6 +1,6 @@
 from odoo import fields,models
 
-class taller(models.Model):
+class Taller(models.Model):
 	_name = "taller.datos"
 	#nama
 	Nombre = fields.Char(size=32,string="Nombre")
