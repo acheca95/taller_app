@@ -32,15 +32,15 @@
         </record>
 
         <record id="taller_action" model="ir.actions.act_window">
-            <field name="name">taller</field>
-            <field name="res_model">taller.taller</field>
+            <field name="name">Taller</field>
+            <field name="res_model">taller.datos</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
         </record>
 
 		<menuitem id="master_root" name="Data Master"/>
         <menuitem id="data_holder" name="Data Master" parent="master_root"/>
-        <menuitem id="taller_menu" name="Data taller" action="taller_action" parent="data_holder"/>
+        <menuitem id="taller_menu" name="Data Taller" action="taller_action" parent="data_holder"/>
 
 	</data>
 </odoo>
