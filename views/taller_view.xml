@@ -1,0 +1,46 @@
+<odoo>
+	<data>
+		
+		<record id="taller_form" model="ir.ui.view">
+            <field name="name">taller.form</field>
+            <field name="model">taller.datos</field>
+            <field name="arch" type="xml">
+                <form string="tree_string">
+                    <sheet>
+                    	<group>
+                            <field name="Nombre" string="Nombre"/>
+                            <field name="Localizacion" string="Localizacion"/>
+                            <field name="Web" string="Web"/>
+                            <field name="Abierto" readonly="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="taller_tree" model="ir.ui.view">
+            <field name="Nombre">taller.tree</field>
+            <field name="model">taller.datos</field>
+            <field name="arch" type="xml">
+                <tree string="tree_string">
+                    <field name="Nombre" string="Nombre"/>
+                    <field name="Localizacion" string="Localizacion"/>
+                    <field name="Web" string="Web"/>
+                    <field name="Abierto" readonly="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="taller_action" model="ir.actions.act_window">
+            <field name="name">taller</field>
+            <field name="res_model">taller.taller</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+		<menuitem id="master_root" name="Data Master"/>
+        <menuitem id="data_holder" name="Data Master" parent="master_root"/>
+        <menuitem id="taller_menu" name="Data taller" action="taller_action" parent="data_holder"/>
+
+	</data>
+</odoo>
